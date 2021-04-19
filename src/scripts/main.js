@@ -7,6 +7,7 @@ import {createPlan} from "./plan.js"
 // import {createWheat} from "./seeds/wheat.js"
 import {addPlant, usePlants} from "./field.js"
 import { plantSeeds } from "./tractor.js"
+import { harvestPlants, useHarvest } from "./harvester.js"
 
 
 // //Harvest Plan
@@ -54,3 +55,7 @@ console.log(plantsUsed)
 
 console.log("-----")
 //Harvesting
+harvestPlants(plantsUsed)
+const harvested = useHarvest()
+
+console.log(harvested)

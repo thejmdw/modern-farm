@@ -1,4 +1,4 @@
-let plants = [];
+const plants = [];
 
 export const addPlant = (seed) => {
   plants.push(seed)
